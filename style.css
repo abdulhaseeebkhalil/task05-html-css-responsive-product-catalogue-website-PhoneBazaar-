@@ -5,7 +5,7 @@ body {
 }
 
 .navbar {
-  background-color: #f3f4f8; /* Change to match your background color */
+  background-color: #c1c8e6; /* Change to match your background color */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -54,7 +54,7 @@ body {
 .main-content {
   display: flex;
   padding: 20px;
-  background-color: #e1dfe7; /* Light blue background to match the image */
+  background-color: #dce6f1; /* Light blue background to match the image */
 }
 
 .sidebar {
@@ -226,3 +226,48 @@ h2 {
 }
 
 /* laptop section ended */
+
+/* smart watches section started */
+
+.watch-container {
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.watch-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px; /* Space between watch items */
+  justify-items: center;
+}
+
+.watch-item {
+  background-color: #f0f7ff; /* Light blue background specific to the watch item */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  width: 250px;
+  text-align: left;
+}
+
+.watch-item img {
+  width: 80px;
+  height: auto;
+  float: left;
+  margin-right: 10px;
+}
+
+.watch-item p {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* smart watches section ended */
