@@ -271,3 +271,60 @@ h2 {
 }
 
 /* smart watches section ended */
+
+/* footer section */
+
+.footer {
+  background-color: #e2ebf5;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+}
+
+.social-icons {
+  margin-bottom: 10px;
+}
+
+.icon {
+  width: 30px;
+  margin: 0 10px;
+  transition: transform 0.3s;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+.footer-text {
+  color: #555;
+  font-size: 14px;
+}
+.footer {
+  background-color: #e2ebf5;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+}
+
+.social-icons {
+  margin-bottom: 10px;
+}
+
+.icon {
+  width: 30px;
+  margin: 0 10px;
+  transition: transform 0.3s;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+.footer-text {
+  color: #555;
+  font-size: 14px;
+}
+
+/* Footer section ended */
