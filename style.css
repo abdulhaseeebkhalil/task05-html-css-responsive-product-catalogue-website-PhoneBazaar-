@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  background-color: lightcyan;
 }
 
 .navbar {
@@ -115,29 +116,123 @@ body {
 /* Main content ended */
 
 /* Product section started */
-.product-section {
-  background-color: #dce6f1; /* Light blue background */
-  padding: 20px;
-  margin-top: 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.container {
+  padding: 10px;
+  text-align: center;
 }
 
-.product-section h2 {
-  margin: 0 0 20px 0;
-  font-size: 22px;
-  font-weight: bold;
-  color: #333; /* Dark text color */
+h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
 }
 
-.product-gallery {
+.phone-row {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between phone items */
 }
 
-.product-gallery img {
-  width: 14%; /* Adjust width to fit 6 images */
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.phone {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  width: 150px;
+  text-align: center;
+}
+
+.phone img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.phone p {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
 }
 
 /* Product section ended */
+
+/* laptop section started */
+.section {
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.section h2 {
+  text-align: left;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.product {
+  display: inline-block;
+  width: 22%;
+  margin: 0 1.5% 20px 0;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+.product:nth-child(4n) {
+  margin-right: 0;
+}
+
+.product-content {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  max-width: 120px;
+}
+
+.product h3 {
+  font-size: 16px;
+  color: #333;
+  margin: 10px 0 5px 0;
+}
+
+.product p {
+  font-size: 14px;
+  color: #666;
+}
+
+.tag {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  background-color: #5a67d8;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 0 0 8px 0;
+}
+
+.tag.limited {
+  background-color: #ff6347; /* Tomato for Limited */
+}
+
+.tag.trending {
+  background-color: #ff8c00; /* Dark Orange for Trending */
+}
+
+.tag.popular {
+  background-color: #32cd32; /* Lime Green for Popular */
+}
+
+.tag.sold-out {
+  background-color: #b22222; /* Firebrick for Sold Out */
+}
+
+/* laptop section ended */
