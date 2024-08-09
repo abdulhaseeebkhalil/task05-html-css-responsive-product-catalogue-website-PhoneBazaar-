@@ -5,7 +5,7 @@ body {
 }
 
 .navbar {
-  background-color: #c1c8e6; /* Change to match your background color */
+  background-color: #f3f4f8; /* Change to match your background color */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -54,7 +54,7 @@ body {
 .main-content {
   display: flex;
   padding: 20px;
-  background-color: #dce6f1; /* Light blue background to match the image */
+  background-color: #e1dfe7; /* Light blue background to match the image */
 }
 
 .sidebar {
@@ -158,81 +158,71 @@ h2 {
 /* Product section ended */
 
 /* laptop section started */
-.section {
+.laptop-container {
   padding: 20px;
-  margin: 20px 0;
+  text-align: center;
 }
 
-.section h2 {
-  text-align: left;
-  margin-bottom: 20px;
+h2 {
+  font-size: 24px;
   color: #333;
+  margin-bottom: 20px;
 }
 
-.product {
-  display: inline-block;
-  width: 22%;
-  margin: 0 1.5% 20px 0;
-  vertical-align: top;
-  box-sizing: border-box;
+.laptop-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between laptop items */
 }
 
-.product:nth-child(4n) {
-  margin-right: 0;
-}
-
-.product-content {
-  background-color: #fff;
-  padding: 15px;
+.laptop {
+  background-color: white;
+  border: 1px solid #ccc;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  width: 180px;
   text-align: center;
   position: relative;
 }
 
-.product img {
-  width: 100%;
+.laptop img {
+  width: 150px;
   height: auto;
   margin-bottom: 10px;
-  max-width: 120px;
 }
 
-.product h3 {
-  font-size: 16px;
-  color: #333;
-  margin: 10px 0 5px 0;
-}
-
-.product p {
+.laptop p {
   font-size: 14px;
-  color: #666;
+  color: #555;
+  margin: 0;
 }
 
-.tag {
+.label {
   position: absolute;
   top: -10px;
   left: -10px;
-  background-color: #5a67d8;
-  color: #fff;
+  background-color: #6b63cc;
+  color: white;
   padding: 5px 10px;
+  border-radius: 10px;
   font-size: 12px;
-  border-radius: 0 0 8px 0;
 }
 
-.tag.limited {
-  background-color: #ff6347; /* Tomato for Limited */
+.limited {
+  background-color: #6b63cc; /* Purple for Limited */
 }
 
-.tag.trending {
-  background-color: #ff8c00; /* Dark Orange for Trending */
+.trending {
+  background-color: #e97171; /* Red for Trending */
 }
 
-.tag.popular {
-  background-color: #32cd32; /* Lime Green for Popular */
+.popular {
+  background-color: #6b63cc; /* Blue for Popular */
 }
 
-.tag.sold-out {
-  background-color: #b22222; /* Firebrick for Sold Out */
+.sold-out {
+  background-color: #6b63cc; /* Purple for Sold Out */
 }
 
 /* laptop section ended */
