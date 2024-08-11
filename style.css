@@ -345,6 +345,9 @@ h2 {
   .search-input {
     width: 150px;
   }
+  .watch-item {
+    width: calc(100% - 40px);
+  }
 }
 
 @media (max-width: 480px) {
