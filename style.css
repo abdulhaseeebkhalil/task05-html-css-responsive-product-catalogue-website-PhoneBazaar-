@@ -5,48 +5,53 @@ body {
 }
 
 .navbar {
-  background-color: #c1c8e6; /* Change to match your background color */
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   padding: 10px 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #d5d8f0;
 }
 
-.logo img {
+.logo {
   height: 60px;
 }
 
-.search-bar {
+.search-container {
   display: flex;
   align-items: center;
-  flex-grow: 1;
-  margin: 0 20px;
+  justify-content: center;
+  flex: 1;
 }
 
-.search-bar input[type="text"] {
-  width: 100%;
-  padding: 10px;
+.search-input {
+  width: 350px;
+  height: 23px;
+  padding: 5px;
   border: none;
-  border-radius: 5px;
-  margin-right: 10px;
+  border-radius: 4px;
+  outline: none;
 }
 
-.search-bar button {
-  background-color: #ffd700; /* Yellow color for search button */
+.search-btn {
+  background-color: #fdd835;
   border: none;
-  padding: 10px;
-  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 5px;
+  border-radius: 4px;
+  height: 33px;
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+}
+
+.nav-icons span {
+  font-size: 24px;
+  margin-left: 15px;
   cursor: pointer;
 }
-
-.nav-icons img {
-  height: 29px;
-  width: 39px;
-  margin-left: 20px;
-  cursor: pointer;
-}
-
 /* Nav-bar Ended */
 
 /* Main content started */
@@ -328,3 +333,20 @@ h2 {
 }
 
 /* Footer section ended */
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .search-input {
+    width: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .search-container {
+    margin-top: 10px;
+  }
+}
